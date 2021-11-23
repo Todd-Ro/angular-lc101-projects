@@ -5,7 +5,9 @@
    </ol>
    <hr>
    <h3>Copy of Skill List</h3>
-   <ol>
+   <ol [class.ol-style]="changeColor">
+      <!--changeColor is defined in skill-set.component.ts by
+         changeColor: boolean = true;-->
       <li *ngFor="let skill of skills">{{skill}}</li>
    </ol>
    <hr>
